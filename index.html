@@ -7,65 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="image/png" sizes="16x16" rel="icon" href="favicon.png">
 
-    <title>HTML C+D</title>
+    <title>ILE - a code+design project</title>
 
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/main.css">
 
     <style id="style-sheet"></style>
-
-    <!-- <link rel="stylesheet" href="css/default.min.css">
-    <script src="js/highlight.min.js"></script>
-    <script>hljs.highlightAll();</script> -->
 </head>
 
 <body>
-    <aside class="side-bar border-right">
-        <nav class="border-bottom">
-            <img class="logo border-right" src="img/C+D_black.png">
-            <select id="tutorial-select" class="border-right">
-                <option>Lädt...</option>
-            </select>
-            <button onclick="reset()" class="border-right">&orarr;</button>
-            <button onclick="downloadFile()">&darr;</button>
-        </nav>
+    <a id="start-screen" href="/menu-screen.html">
+    </a>
 
-        <div id="information" class="border-bottom">
-            <h2 id="step-header" class="box-header m3">Lade...</h2>
-            <div id="step-info" class="m3">Lade...</div>
-        </div>
-
-        <div class="step-buttons">
-            <button onclick="back()">&larr;</button>
-            <span id="counter">1/?</span>
-            <button onclick="next()">&rarr;</button>
-        </div>
-
-    </aside>
-
-    <div id="output-field" class="border-bottom">
-        <div class="browser">
-            <img src="img/browser-bar.svg" />
-            <iframe id="output"></iframe>
-        </div>
+    <div class="footer abs">
+        <a href="impressum-dsgvo.html" target="_blank">Impressum & Datenschutz</a> -
+        <a href="https://code.design" target="_blank">Ein Projekt der: code+design</a>
     </div>
-
-    <section class="editor ">
-        <div id="html-editor" class="border-right">
-            <h3 class="box-header border-bottom">HTML</h3>
-
-            <textarea class="editor-input" id="html-input" oninput="updateOutput()" spellcheck="false">
-            </textarea>
-        </div>
-
-        <div id="css-editor">
-            <h3 class="box-header border-bottom">CSS</h3>
-            <textarea class="editor-input" id="css-input" oninput="updateOutput()" spellcheck="false">
-        </textarea>
-        </div>
-    </section>
-
-    <script src="tutorial.js"></script>
-    <script src="script.js"></script>
 </body>
 
 </html>

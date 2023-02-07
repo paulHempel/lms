@@ -1,20 +1,20 @@
 <svg width="933" height="70" viewBox="0 0 933 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 8C0 3.58172 3.58172 0 8 0H925C929.418 0 933 3.58172 933 8V40H0V8Z" fill="#F7F7F7"/>
+<path d="M0 8C0 3.58172 3.58172 0 8 0H925C929.418 0 933 3.58172 933 8V40H0V8Z" fill="#3D3D3D"/>
 <g filter="url(#filter0_d_305_2)">
-<rect x="68" y="6" width="98" height="26" rx="4" fill="white"/>
+<rect x="68" y="6" width="98" height="26" rx="4" fill="#575757"/>
 </g>
 <mask id="path-3-inside-1_305_2" fill="white">
 <path d="M0 40H933V70H0V40Z"/>
 </mask>
-<path d="M0 40H933V70H0V40Z" fill="white"/>
+<path d="M0 40H933V70H0V40Z" fill="#535353"/>
 <path d="M933 69.5H0V70.5H933V69.5Z" fill="#D9D9D9" mask="url(#path-3-inside-1_305_2)"/>
-<rect x="53" y="44" width="559" height="22" rx="4" fill="#F7F7F7"/>
-<rect x="629" y="44" width="22" height="22" rx="4" fill="#F7F7F7"/>
-<rect x="838" y="44" width="22" height="22" rx="4" fill="#F7F7F7"/>
-<rect x="869" y="44" width="22" height="22" rx="4" fill="#F7F7F7"/>
-<rect x="898" y="47" width="22" height="4" rx="2" fill="#F7F7F7"/>
-<rect x="898" y="53" width="22" height="4" rx="2" fill="#F7F7F7"/>
-<rect x="898" y="59" width="22" height="4" rx="2" fill="#F7F7F7"/>
+<rect x="53" y="44" width="559" height="22" rx="4" fill="#3D3D3D"/>
+<rect x="629" y="44" width="22" height="22" rx="4" fill="#3D3D3D"/>
+<rect x="838" y="44" width="22" height="22" rx="4" fill="#3D3D3D"/>
+<rect x="869" y="44" width="22" height="22" rx="4" fill="#3D3D3D"/>
+<rect x="898" y="47" width="22" height="4" rx="2" fill="#3D3D3D"/>
+<rect x="898" y="53" width="22" height="4" rx="2" fill="#3D3D3D"/>
+<rect x="898" y="59" width="22" height="4" rx="2" fill="#3D3D3D"/>
 <circle cx="19" cy="19" r="3.75" fill="#FB4E28" stroke="#DC5234" stroke-width="0.5"/>
 <circle cx="32" cy="19" r="3.75" fill="#FBB328" stroke="#D7971B" stroke-width="0.5"/>
 <circle cx="45" cy="19" r="3.75" fill="#63D968" stroke="#30A735" stroke-width="0.5"/>
