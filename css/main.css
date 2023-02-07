@@ -1,0 +1,350 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/inter-v7-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Inktrap';
+    src: url('../fonts/WhyteInktrap-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'ShareTechMono';
+    src: url('../fonts/ShareTechMono-Regular.ttf') format('truetype');
+}
+
+body {
+    background-color: #333333;
+    color: #FEFEFE;
+    width: 100vw;
+    margin: 0;
+    height: 100vh;
+
+    font-family: Inter, sans-serif;
+
+    display: grid;
+    grid-template:
+        'nav output' minmax(min-content, 2fr)
+        'nav editor' 1fr
+          / 25% minmax(min-content, 1fr);
+}
+
+a {
+    color: #FBB328;
+    font-weight: bold;
+    font-family: Inktrap, sans-serif;
+    text-decoration-line: none;
+    letter-spacing: 0.04em;
+}
+
+code {
+    color: #1998e4;
+}
+
+pre {
+    background-color: #111;
+    border-radius: 8px;
+    padding: 8px 12px;
+    overflow-x: auto;
+}
+
+pre code {
+    color: #9ed1ee;
+    line-height: 1.6em;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+/* font */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inktrap';
+
+}
+
+/* margin */
+
+.m2 {
+    margin: 8px;
+}
+
+.m3 {
+    margin: 16px;
+}
+
+/* border */
+
+.border-right {
+    border-right: 3px solid #111 !important;
+}
+
+.border-bottom {
+    border-bottom: 3px solid #111;
+}
+
+/* grid */
+
+.side-bar {
+    grid-area: nav;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    resize: horizontal;
+}
+
+.editor {
+    grid-area: editor;
+    display: flex;
+    align-items: stretch;
+    justify-items: stretch;
+}
+
+.editor h3 {
+    margin: 0;
+    padding: 7px 0 0 4px;
+}
+
+.editor > * {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.editor textarea {
+    line-height: 2.2em;
+    font-size: 1em;
+    flex-grow: 1;
+    font-family: monospace;
+    padding: 4px;
+    color: #DDD;
+    background: repeating-linear-gradient(#222, #222 2.2em, #282828 2.2em, #282828 4.4em);
+}
+
+.editor textarea:focus {
+    /*    background-color: #efefef;*/
+    /*    outline-color: 2px solid #FBB328;*/
+    outline: 2px solid #FBB328 !important;
+    border: none !important;
+}
+
+#html-editor {
+    grid-area: html;
+    /* resize: vertical; */
+    overflow: auto;
+}
+
+#css-editor {
+    grid-area: css;
+}
+
+#output-field {
+    overflow: auto;
+    resize: vertical;
+    grid-area: output;
+    padding: 16px;
+}
+
+.browser {
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.26);
+    border-radius: 8px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.browser > img {
+    width: 100%;
+}
+
+/* basics */
+
+#story {
+    background-color: #f8de4f;
+    color: black;
+    padding-bottom: 32px;
+}
+
+#story h2 {
+    margin-top: 0;
+    padding-top: 24px;
+}
+
+#information {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+#information h3 {
+    margin-bottom: 0;
+}
+
+
+#step-info {
+    margin-top: 0;
+    font-family: 'Inter', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    padding: 4px;
+    overflow-y: auto;
+    /* mask-image: linear-gradient(to bottom, #EEF5F0 90%, transparent 100%); */
+}
+
+#step-info em {
+    border: solid 1px #FEDFB2;
+    background-color: #FEDFB255;
+    border-radius: 8px;
+    padding: 2px 4px;
+    font-style: normal;
+    font-family: 'ShareTechMono', monospace !important;
+    color: rgb(121, 121, 121) !important;
+
+}
+
+/* editor */
+
+.editor-input {
+    font-family: 'ShareTechMono', monospace !important;
+    color: rgb(27, 27, 27);
+    margin: 2px;
+    font-family: monospace;
+    border: none;
+    line-height: 1.5em;
+    resize: none;
+
+
+    /* background-position: 0 .1em;
+
+    background-attachment: local;
+    background-image: linear-gradient(transparent 50%, #CCDED233 50%);
+    background-size: 100% 3rem; */
+}
+
+#css-input.editor-input {
+}
+
+/* nav */
+
+
+nav {
+    display: flex;
+    align-items: stretch;
+    /*gap: 12px;*/
+    font-family: 'Inktrap', 'Inter', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+}
+
+nav button, .step-buttons button {
+    margin: 6px;
+}
+
+nav img {
+    height: 100%;
+}
+
+nav #tutorial-select {
+    background-color: #333333;
+    color: white;
+    font-weight: bold;
+    padding: 9px 16px 9px 16px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 5px;
+}
+
+nav #title {
+    font-size: 1em;
+}
+
+nav #counter {
+    background-color: #FEDFB2;
+    padding: 11px 16px 5px 16px;
+    border-radius: 16px;
+    text-align: center;
+    color: white;
+}
+
+nav div {
+    flex-grow: 1;
+
+}
+
+button, nav a {
+    text-transform: uppercase;
+    background-color: #e79311;;
+    colore: white;
+    font-weight: bold;
+    font-size: 1em;
+    border: none;
+    padding: 8px 8px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+nav a {
+    padding: 11px 16px 5px 16px;
+}
+
+.step-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* output */
+
+#output {
+    overflow-y: auto;
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+
+/* general */
+
+.logo {
+    /* width: 20px; */
+    height: 24px;
+    padding: 8px;
+}
+
+.footer {
+    /*    text-align: center;*/
+    margin-bottom: 4px;
+    margin-left: 8px;
+    font-size: 0.6em;
+    color: #888;
+    font-family: sans-serif;
+    font-weight: 200;
+}
+
+.footer a {
+    color: #888;
+    font-family: sans-serif;
+    font-weight: 200;
+}
+
+.abs {
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+}
+
+#start-screen {
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/img/game_dev_simulator_start_screen.png");
+}
+
+#menu-screen {
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/img/game_dev_simulator_menu_screen.png");
+}

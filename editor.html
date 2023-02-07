@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/png" sizes="16x16" rel="icon" href="favicon.png">
+
+    <title>ILE - a code+design project</title>
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <style id="style-sheet"></style>
+</head>
+
+<body>
+    <aside class="side-bar border-right">
+        <nav class="border-bottom">
+            <button onclick="reset()">&orarr;</button>
+            <button onclick="downloadFile()">&darr;</button>
+            <select id="tutorial-select" onchange="changeCourse()">
+                <option>Lädt...</option>
+            </select>
+        </nav>
+
+
+        <div id="information" class="border-bottom">
+
+            <div id="story" class="border-bottom">
+                <h2 class="m3">Nachricht</h2>
+                <div id="story-info" class="m3">Lade...</div>
+            </div>
+
+            <h3 class="m3">Hilfe</h3>
+            <div id="step-info" class="m3">Lade...</div>
+        </div>
+
+
+        <div class="step-buttons border-bottom">
+            <button onclick="back()">&larr;</button>
+            <span id="counter">1/?</span>
+            <button onclick="next()">&rarr;</button>
+        </div>
+
+        <div class="footer">
+            <a href="impressum-dsgvo.html" target="_blank">Impressum & Datenschutz</a> -
+            <a href="https://code.design" target="_blank">Ein Projekt der: code+design</a>
+        </div>
+
+    </aside>
+
+    <div id="output-field" class="border-bottom">
+        <div class="browser">
+            <img src="img/browser-bar.svg" />
+            <iframe id="output"></iframe>
+        </div>
+    </div>
+
+    <section class="editor ">
+        <div id="html-editor" class="border-right">
+            <h3 class="box-header border-bottom">HTML</h3>
+
+            <textarea class="editor-input language-html" id="html-input" oninput="updateOutput()" spellcheck="false">
+            </textarea>
+        </div>
+
+        <div id="css-editor">
+            <h3 class="box-header border-bottom">CSS</h3>
+            <textarea class="editor-input language-css" id="css-input" oninput="updateOutput()" spellcheck="false">
+        </textarea>
+        </div>
+    </section>
+
+    <script src="js/courses.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

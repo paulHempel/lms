@@ -1,0 +1,1 @@
+Um den Rechtschreibfehler zu korrigieren, such dir einfach die markierte Zeile im Text und markiere das Wort mit dem Rechtschreibfehler. Nun kannst du das Wort richtig schreiben.
